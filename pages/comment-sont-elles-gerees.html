@@ -42,10 +42,44 @@
             margin-bottom: 40px;
         }
 
+        @media (max-width: 768px) {
+            .navbar-desktop {
+                display: none;
+            }
+            .navbar-toggler {
+                visibility: visible;
+            }
+
+            .mobile {
+                display: block;
+            }
+
+            .desktop {
+                display: none;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .navbar-mobile {
+                display: none;
+            }
+            .navbar-toggler {
+                visibility: hidden;
+            }
+
+            .mobile {
+                display: none;
+            }
+
+            .desktop {
+                display: block;
+            }
+        }
+
     </style>
     <body>
         <!---- Barre de Navigation ----->
-        <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+        <nav class="navbar navbar-dark bg-dark navbar-desktop" aria-label="First navbar example">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">Accueil</a>
                 <div class="d-flex justify-content-end">
@@ -55,7 +89,7 @@
                     <a class="btn btn-outline-light my-2 my-sm-0 mr-2" href="utilisation.html" style="margin-left: 1em;">Comment sont elles utilisées</a>
                     <a class="btn btn-outline-light my-2 my-sm-0 mr-2" href="sources.html" style="margin-left: 1em;">Sources</a>
                 </div>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation" style="visibility: visible">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -75,6 +109,26 @@
             </div>
         </nav>
 
+        <nav class="navbar navbar-dark bg-dark navbar-mobile" aria-label="First navbar example">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Accueil</a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="navbarsExample02" style="">
+                    <ul class="navbar-nav me-auto mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="comment-sont-elles-gerees.html" style="margin-left: 1em;">Comment sont elles gérées</a>
+                            <a class="nav-link active" aria-current="page" href="cquoi.html" style="margin-left: 1em;">C'est quoi une donnée personnelle</a>
+                            <a class="nav-link active" aria-current="page" href="protection.html" style="margin-left: 1em;">Comment s'en protéger</a>
+                            <a class="nav-link active" aria-current="page" href="utilisation.html" style="margin-left: 1em;">Comment sont elles utilisées</a>
+                            <a class="nav-link active" aria-current="page" href="sources.html" style="margin-left: 1em;">Sources</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <!-- Hero Section -->
         <section class="hero-section">
             <div class="container">
@@ -99,18 +153,19 @@
                             <p id="inter">
                                 Les activités sur les réseaux sociaux, les recherches sur internet, les achats en ligne, les interactions avec des applications mobiles et des sites web génèrent une multitude de données personnelles telles que les préférences, les comportements de navigation, les coordonnées, etc.
                             </p>
+                            <img src="../img/pouloulou.jpg" class="img-fluid rounded mobile" alt="Image" style="height: 98%;">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <img src="../img/pouloulou.jpg" class="img-fluid rounded" style="height: 75%; float: right">
+                    <img src="../img/pouloulou.jpg" class="img-fluid rounded desktop" style="height: 75%; float: right">
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <img src="../img/frigo.jpg" class="img-fluid rounded" style="height: 80%;">
+                    <img src="../img/frigo.jpg" class="img-fluid rounded desktop" style="height: 80%;">
                 </div>
                 <div class="col-md-8">
                     <div class="card">
@@ -119,6 +174,7 @@
                             <p id="con">
                                 Les smartphones, les montres intelligentes, les appareils domestiques connectés et autres gadgets IoT collectent souvent des données personnelles telles que la localisation géographique, les habitudes de sommeil, les niveaux d'activité, etc.
                             </p>
+                            <img src="../img/frigo.jpg" class="img-fluid rounded mobile" alt="Image" style="height: 98%;">
                         </div>
                     </div>
                 </div>
@@ -133,11 +189,12 @@
                             <p id="tr">
                                 Chaque fois qu'une transaction financière est effectuée, que ce soit par carte de crédit, virement bancaire ou paiement en ligne, des données personnelles telles que les détails de compte, les historiques d'achats et les informations de facturation sont générées.
                             </p>
+                            <img src="../img/cb_money_money.webp" class="img-fluid rounded mobile" alt="Image" style="height: 98%;">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <img src="../img/cb_money_money.webp" class="img-fluid rounded justify-content-end" style="height: 65%;float: right">
+                    <img src="../img/cb_money_money.webp" class="img-fluid rounded justify-content-end desktop" style="height: 65%;float: right">
                 </div>
             </div>
         </div>
@@ -145,7 +202,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <img src="../img/photo_de_merde.webp" class="img-fluid rounded" style="height: 65%;">
+                    <img src="../img/photo_de_merde.webp" class="img-fluid rounded desktop" style="height: 65%;">
                 </div>
                 <div class="col-md-8">
                     <div class="card">
@@ -154,6 +211,7 @@
                             <p id="sant">
                                 Les consultations médicales, les dossiers médicaux électroniques, les dispositifs de suivi de la condition physique et autres sources médicales génèrent des données personnelles sensibles relatives à la santé.
                             </p>
+                            <img src="../img/photo_de_merde.webp" class="img-fluid rounded mobile" alt="Image" style="height: 98%;">
                         </div>
                     </div>
                 </div>
@@ -169,11 +227,12 @@
                             <p id="loc">
                                 Les appareils GPS, les applications de cartographie et même les réseaux Wi-Fi peuvent collecter des données de localisation qui peuvent être associées à une personne.
                             </p>
+                            <img src="../img/gps.jpg" class="img-fluid rounded mobile" alt="Image" style="height: 98%;">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <img src="../img/gps.jpg" class="img-fluid rounded justify-content-end" style="height: 65%;float: right">
+                    <img src="../img/gps.jpg" class="img-fluid rounded justify-content-end desktop" style="height: 65%;float: right">
                 </div>
             </div>
         </div>
@@ -181,7 +240,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <img src="../img/Email-marketing-interets-F.jpg" class="img-fluid rounded" style="height: 66%;">
+                    <img src="../img/Email-marketing-interets-F.jpg" class="img-fluid rounded desktop" style="height: 66%;">
                 </div>
                 <div class="col-md-8">
                     <div class="card">
@@ -190,6 +249,7 @@
                             <p id="com">
                                 Les e-mails, les appels téléphoniques, les messages texte et d'autres formes de communication génèrent des métadonnées telles que l'heure et la durée des communications, ainsi que les personnes avec qui la communication est établie.
                             </p>
+                            <img src="../img/Email-marketing-interets-F.jpg" class="img-fluid rounded mobile" alt="Image" style="height: 98%;">
                         </div>
                     </div>
                 </div>
@@ -205,11 +265,12 @@
                             <p id="bio">
                                 Les empreintes digitales, les scans rétiniens, les visages scannés pour la reconnaissance faciale sont des exemples de données biométriques générées par les systèmes de sécurité et d'identification.
                             </p>
+                            <img src="../img/terrifiant.jpg" class="img-fluid rounded mobile" alt="Image" style="height: 98%;">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <img src="../img/terrifiant.jpg" class="img-fluid rounded justify-content-end" style="height: 60%;float: right">
+                    <img src="../img/terrifiant.jpg" class="img-fluid rounded justify-content-end desktop" style="height: 60%;float: right">
                 </div>
             </div>
         </div>

@@ -1,10 +1,299 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" data-bs-theme="dark">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <script src="../js/bootstrap.js"></script>
+
+    <title>Qu'est-ce qu'une donnée personnelle ?</title>
+</head>
+<style>
+    /* Custom Styles */
+    .hero-section {
+        position: relative;
+        color: #fff;
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    .hero-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../img/hugo/data_woman.png'); /* Specify the path to your background image */
+        background-size: cover;
+        background-position: center;
+        filter: blur(1px) brightness(0.6); /* Apply filters to the background image */
+        z-index: -1;
+    }
+
+    .hero-heading {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-subheading {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+    }
+
+    @media (max-width: 768px) {
+        .navbar-desktop {
+            display: none;
+        }
+        .navbar-toggler {
+            visibility: visible;
+        }
+
+        .mobile {
+            display: block;
+        }
+
+        .desktop {
+            display: none;
+        }
+    }
+
+    @media (min-width: 769px) {
+        .navbar-mobile {
+            display: none;
+        }
+        .navbar-toggler {
+            visibility: hidden;
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        .desktop {
+            display: block;
+        }
+    }
+
+</style>
+<body>
+<!---- Barre de Navigation ----->
+<nav class="navbar navbar-dark bg-dark navbar-desktop" aria-label="First navbar example">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Accueil</a>
+        <div class="d-flex justify-content-end">
+            <a class="btn btn-outline-light my-2 my-sm-0 mr-2" href="comment-sont-elles-gerees.html" style="margin-left: 1em;">Comment sont elles gérées</a>
+            <a class="btn btn-outline-light my-2 my-sm-0 mr-2" href="cquoi.html" style="margin-left: 1em;">C'est quoi une donnée personnelle</a>
+            <a class="btn btn-outline-light my-2 my-sm-0 mr-2" href="protection.html" style="margin-left: 1em;">Comment s'en protéger</a>
+            <a class="btn btn-outline-light my-2 my-sm-0 mr-2" href="utilisation.html" style="margin-left: 1em;">Comment sont elles utilisées</a>
+            <a class="btn btn-outline-light my-2 my-sm-0 mr-2" href="sources.html" style="margin-left: 1em;">Sources</a>
+        </div>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation" style="visibility: hidden">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+
+<nav class="navbar navbar-dark bg-dark navbar-mobile" aria-label="First navbar example">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Accueil</a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarsExample02" style="">
+            <ul class="navbar-nav me-auto mb-2">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="comment-sont-elles-gerees.html" style="margin-left: 1em;">Comment sont elles gérées</a>
+                    <a class="nav-link active" aria-current="page" href="cquoi.html" style="margin-left: 1em;">C'est quoi une donnée personnelle</a>
+                    <a class="nav-link active" aria-current="page" href="protection.html" style="margin-left: 1em;">Comment s'en protéger</a>
+                    <a class="nav-link active" aria-current="page" href="utilisation.html" style="margin-left: 1em;">Comment sont elles utilisées</a>
+                    <a class="nav-link active" aria-current="page" href="sources.html" style="margin-left: 1em;">Sources</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="hero-heading">Données Personnelles</h1>
+                <p class="hero-subheading">Dans un monde de plus en plus connecté où les données personnelles sont omniprésentes, comment concilier la nécessité de collecter et d'utiliser ces données pour le développement des services en ligne avec la protection de la vie privée et la sécurité des utilisateurs ?</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---- Paragraphes ----->
+<center>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Tout comprendre sur la CNIL :</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item"><a class="nav-link" href="https://www.cnil.fr/fr/definition/donnee-personnelle">
+                            <i class="fas fa-link"></i> Définition des données personnelles</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.cnil.fr/fr/cnil-direct/question/la-cnil-cest-quoi">
+                            <i class="fas fa-link"></i> La CNIL, c'est quoi ?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.cnil.fr/fr/technologies/videosurveillance-videoprotection">
+                            <i class="fas fa-link"></i> Vidéosurveillance et vidéoprotection</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.cnil.fr/fr/les-missions-de-la-cnil">
+                            <i class="fas fa-link"></i> Les missions de la CNIL</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.cnil.fr/sites/cnil/files/2023-11/cnil_cnil_en_bref_2023.pdf">
+                            <i class="fas fa-link"></i> CNIL en bref 2023 (PDF)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Données personnelles :</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item"><a class="nav-link" href="https://www.senat.fr/lc/lc62/lc623.html">
+                            <i class="fas fa-link"></i> Loi informatique et libertés - Sénat</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://monexpertdudroit.com/rgpd/donnees-personnelles/">
+                            <i class="fas fa-link"></i> RGPD et données personnelles</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.economie.gouv.fr/entreprises/obligations-donnees-personnelles-rgpd">
+                            <i class="fas fa-link"></i> Obligations RGPD pour les entreprises</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.cnil.fr/fr/rgpd-de-quoi-parle-t-on">
+                            <i class="fas fa-link"></i> RGPD : De quoi parle-t-on?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.lesechos.fr/partenaires/orange-cyberdefense/combien-valent-vos-donnees-personnelles-1218438">
+                            <i class="fas fa-link"></i> Combien valent vos données personnelles?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://itsocial.fr/articles-decideurs/combien-valent-vos-donnees-personnelles-infographie/">
+                            <i class="fas fa-link"></i> Infographie : Combien valent vos données personnelles?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.lebigdata.fr/dark-web-cout-donnees">
+                            <i class="fas fa-link"></i> Dark Web : Le coût des données personnelles</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.clubic.com/pro/legislation-loi-internet/cnil/actualite-26241-fichiers-de-police-elargis-quelles-donnees-personnelles-peut-on-recueillir-sur-vous-et-par-quels-moyens-.html">
+                            <i class="fas fa-link"></i> Fichiers de police : Quelles données personnelles peuvent être collectées?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://start.lesechos.fr/societe/culture-tendances/vendre-ses-donnees-personnelles-un-business-controverse-1273442">
+                            <i class="fas fa-link"></i> Vendre ses données personnelles : Un business controversé</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Historique de protection des données personnelles :</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item"><a class="nav-link" href="https://zestedesavoir.com/tutoriels/2529/le-rgpd-nouveau-droit-de-la-protection-des-donnees-personnelles/historique-et-application-des-lois-concernant-les-donnees-personnelles/">
+                            <i class="fas fa-link"></i> Historique et application des lois sur la protection des données personnelles - Zeste de Savoir</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://edps.europa.eu/data-protection/data-protection/legislation/history-general-data-protection-regulation_fr">
+                            <i class="fas fa-link"></i> Histoire de la réglementation générale sur la protection des données - EDPS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://linc.cnil.fr/1970-2021-la-protection-des-donnees-essaime-le-monde">
+                            <i class="fas fa-link"></i> La protection des données de 1970 à 2021 - LINC CNIL</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.lhistoire.fr/entretien/de-la-cnil-au-rgpd%C2%A0-40-ans-de-protection-des-donn%C3%A9es">
+                            <i class="fas fa-link"></i> De la CNIL au RGPD : 40 ans de protection des données - L'Histoire</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Informations sur la sécurité numérique :</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item"><a class="nav-link" href="https://ihedn.fr/formation/souverainete-numerique-et-cybersecurite/">
+                            <i class="fas fa-link"></i> Souveraineté numérique et cybersécurité - IHEDN</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.cybermalveillance.gouv.fr/">
+                            <i class="fas fa-link"></i> Plateforme cybermalveillance.gouv.fr</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.slate.fr/recherche?sort_by=published_at:desc&q=donn%C3%A9es+personnelles">
+                            <i class="fas fa-link"></i> Slate.fr - Recherche : Données personnelles</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.cnil.fr/fr/la-videosurveillance-videoprotection-au-travail">
+                            <i class="fas fa-link"></i> Vidéosurveillance et vidéoprotection au travail - CNIL</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.cnil.fr/fr/le-droit-detre-informe-sur-lutilisation-de-vos-donnees-0">
+                            <i class="fas fa-link"></i> Le droit d'être informé sur l'utilisation de vos données - CNIL</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://urbanattitude.fr/quelle-place-pour-la-surveillance-numerique-en-france/">
+                            <i class="fas fa-link"></i> Quelle place pour la surveillance numérique en France? - Urban Attitude</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Spam :</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item"><a class="nav-link" href="https://www.cnil.fr/fr/spam-phishing-arnaques-signaler-pour-agir">
+                            <i class="fas fa-link"></i> Spam, phishing, arnaques : Signaler pour agir - CNIL</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.cnil.fr/fr/plainte/internet/signaler-des-sollicitations-commerciales-par-courrier-electronique-non-desirees">
+                            <i class="fas fa-link"></i> Signaler des sollicitations commerciales par courrier électronique non désirées - CNIL</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.cnil.fr/fr/phishing-detecter-un-message-malveillant">
+                            <i class="fas fa-link"></i> Phishing : Détecter un message malveillant - CNIL</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Fuite de données/risques :</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item"><a class="nav-link" href="https://www.latribune.fr/economie/france/france-travail-victime-d-une-cyberattaque-massive-43-millions-de-personnes-potentiellement-touchees-992869.html">
+                            <i class="fas fa-link"></i> Cyberattaque massive touchant 43 millions de personnes - La Tribune</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://france3-regions.francetvinfo.fr/provence-alpes-cote-d-azur/bouches-du-rhone/piratage-de-33-millions-de-numeros-de-securite-sociale-etes-vous-concerne-2920908.html">
+                            <i class="fas fa-link"></i> Piratage de 33 millions de numéros de sécurité sociale - France 3 Régions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.lemonde.fr/en/france/article/2023/07/06/france-set-to-allow-police-to-spy-through-phones_6044269_7.html">
+                            <i class="fas fa-link"></i> La France autorise la police à espionner les téléphones - Le Monde</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.ege.fr/infoguerre/2018/04/chasse-aux-donnees-personnelles">
+                            <i class="fas fa-link"></i> Chasse aux données personnelles - EGE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://cybernews.com/news/tietoevry-ransomware-attack-disrupts-businesses/">
+                            <i class="fas fa-link"></i> Attaque de ransomware perturbant les entreprises - CyberNews</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.slate.fr/story/159616/donnees-personnelles-facebook-google-savent-sur-vous">
+                            <i class="fas fa-link"></i> Ce que Facebook et Google savent de vous - Slate.fr</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://fr.wikipedia.org/wiki/Scandale_Facebook-Cambridge_Analytica">
+                            <i class="fas fa-link"></i> Scandale Facebook-Cambridge Analytica - Wikipedia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://cybernews.com/news/tietoevry-ransomware-attack-disrupts-businesses/">
+                            <i class="fas fa-link"></i> Attaque de ransomware perturbant les entreprises - CyberNews</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.lemonde.fr/economie/article/2023/07/10/europe-etats-unis-l-accord-transatlantique-controverse-de-transfert-des-donnees-valide-par-bruxelles_6181378_3234.html">
+                            <i class="fas fa-link"></i> Accord transatlantique controversé sur le transfert de données - Le Monde</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.ouest-france.fr/leditiondusoir/2023-05-10/vos-donnees-personnelles-piratees-valent-parfois-de-l-or-voici-leurs-prix-de-revente-sur-le-dark-web-e7d0478b-3149-4b9e-9bb5-90b84d483174">
+                            <i class="fas fa-link"></i> Prix de revente des données personnelles piratées - Ouest France</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://cybernews.com/news/stolen-data-of-500-million-linkedin-users-being-sold-online-2-million-leaked-as-proof-2/">
+                            <i class="fas fa-link"></i> Données de 500 millions d'utilisateurs de LinkedIn volées et vendues - CyberNews</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://korii.slate.fr/et-caetera/humanite-vient-subir-pire-fuite-donnees-personnelles-histoire-leak-internet-cybersecurite">
+                            <i class="fas fa-link"></i> La pire fuite de données personnelles de l'histoire - Slate.fr</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://cybernews.com/privacy/big-tech-drives-the-shift-beyond-passwords/">
+                            <i class="fas fa-link"></i> Les géants de la technologie stimulent le changement au-delà des mots de passe - CyberNews</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://cybernews.com/security/">
+                            <i class="fas fa-link"></i> Sécurité informatique - CyberNews</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Entre-deux :</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item"><a class="nav-link" href="https://theconversation.com/l-internet-souverain-russe-face-au-covid-19-136705">
+                            <i class="fas fa-link"></i> L'internet souverain russe face au COVID-19 - The Conversation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://droitdu.net/2019/11/surveillance-en-france-et-protection-des-donnees-personnelles-compromis-ou-frontiere-etanche/">
+                            <i class="fas fa-link"></i> Surveillance en France et protection des données personnelles : compromis ou frontière étanche ? - DroitDu.net</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.lemonde.fr/pixels/article/2022/04/29/contre-la-surveillance-en-ligne-des-internautes-empoisonnent-leurs-donnees-personnelles_6124107_4408996.html">
+                            <i class="fas fa-link"></i> Contre la surveillance en ligne, des internautes empoisonnent leurs données personnelles - Le Monde</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.dpo-partage.fr/revente-des-donnees-personnelles/">
+                            <i class="fas fa-link"></i> La revente des données personnelles - DPO Partage</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
 </body>
 </html>

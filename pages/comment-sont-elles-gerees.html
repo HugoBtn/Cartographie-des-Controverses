@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="dark">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <link href="../css/bootstrap.css" rel="stylesheet">
+        <script src="../js/bootstrap.js"></script>
+
+        <title>Comment sont générées les donnes personnelles ?</title>
+    </head>
+    <style>
+        /* Custom Styles */
+        .hero-section {
+            position: relative;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../img/hugo/data_woman.png'); /* Specify the path to your background image */
+            background-size: cover;
+            background-position: center;
+            filter: blur(1px) brightness(0.6); /* Apply filters to the background image */
+            z-index: -1;
+        }
+
+        .hero-heading {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-subheading {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+        }
+
+    </style>
+    <body>
+        <!---- Barre de Navigation ----->
+        <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Accueil</a>
+                <div class="d-flex justify-content-end">
+                    <a class="btn btn-outline-light my-2 my-sm-0 mr-2" href="comment-sont-elles-gerees.html" style="margin-left: 1em;">Comment sont elles gérées</a>
+                    <a class="btn btn-outline-light my-2 my-sm-0 mr-2" href="cquoi.html" style="margin-left: 1em;">C'est quoi une donnée personnelle</a>
+                    <a class="btn btn-outline-light my-2 my-sm-0 mr-2" href="protection.html" style="margin-left: 1em;">Comment s'en protéger</a>
+                    <a class="btn btn-outline-light my-2 my-sm-0 mr-2" href="utilisation.html" style="margin-left: 1em;">Comment sont elles utilisées</a>
+                    <a class="btn btn-outline-light my-2 my-sm-0 mr-2" href="sources.html" style="margin-left: 1em;">Sources</a>
+                </div>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="navbarsExample01" style="">
+                    <ul class="navbar-nav me-auto mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#inter">Interactions en ligne</a>
+                            <a class="nav-link active" aria-current="page" href="#con">Appareils connectés</a>
+                            <a class="nav-link active" aria-current="page" href="#tr">Transactions en ligne</a>
+                            <a class="nav-link active" aria-current="page" href="#sant">Données de santé</a>
+                            <a class="nav-link active" aria-current="page" href="#loc">Données de localisation</a>
+                            <a class="nav-link active" aria-current="page" href="#com">Données de communication</a>
+                            <a class="nav-link active" aria-current="page" href="#bio">Données biométriques</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="hero-heading">Données Personnelles</h1>
+                        <p class="hero-subheading">Dans un monde de plus en plus connecté où les données personnelles sont omniprésentes, comment concilier la nécessité de collecter et d'utiliser ces données pour le développement des services en ligne avec la protection de la vie privée et la sécurité des utilisateurs ?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <center><h5 class="h5 font-weight-bold" id="Texte01" style="padding: 2em;">Comment sont générées les donnes personnelles ?</h5></center>
+
+        <!---- Paragraphes ----->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Interactions en ligne :</h5>
+                            <p id="inter">
+                                Les activités sur les réseaux sociaux, les recherches sur internet, les achats en ligne, les interactions avec des applications mobiles et des sites web génèrent une multitude de données personnelles telles que les préférences, les comportements de navigation, les coordonnées, etc.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="../img/pouloulou.jpg" class="img-fluid rounded" style="height: 75%; float: right">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../img/frigo.jpg" class="img-fluid rounded" style="height: 80%;">
+                </div>
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body justify-content-end">
+                            <h5 class="card-title font-weight-bold">Appareils connectés :</h5>
+                            <p id="con">
+                                Les smartphones, les montres intelligentes, les appareils domestiques connectés et autres gadgets IoT collectent souvent des données personnelles telles que la localisation géographique, les habitudes de sommeil, les niveaux d'activité, etc.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Transactions financières :</h5>
+                            <p id="tr">
+                                Chaque fois qu'une transaction financière est effectuée, que ce soit par carte de crédit, virement bancaire ou paiement en ligne, des données personnelles telles que les détails de compte, les historiques d'achats et les informations de facturation sont générées.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="../img/cb_money_money.webp" class="img-fluid rounded justify-content-end" style="height: 65%;float: right">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../img/photo_de_merde.webp" class="img-fluid rounded" style="height: 65%;">
+                </div>
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body justify-content-end">
+                            <h5 class="card-title font-weight-bold">Données de santé :</h5>
+                            <p id="sant">
+                                Les consultations médicales, les dossiers médicaux électroniques, les dispositifs de suivi de la condition physique et autres sources médicales génèrent des données personnelles sensibles relatives à la santé.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Données de localisation :</h5>
+                            <p id="loc">
+                                Les appareils GPS, les applications de cartographie et même les réseaux Wi-Fi peuvent collecter des données de localisation qui peuvent être associées à une personne.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="../img/gps.jpg" class="img-fluid rounded justify-content-end" style="height: 65%;float: right">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../img/Email-marketing-interets-F.jpg" class="img-fluid rounded" style="height: 66%;">
+                </div>
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body justify-content-end">
+                            <h5 class="card-title font-weight-bold">Données de communication :</h5>
+                            <p id="com">
+                                Les e-mails, les appels téléphoniques, les messages texte et d'autres formes de communication génèrent des métadonnées telles que l'heure et la durée des communications, ainsi que les personnes avec qui la communication est établie.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Données biométriques :</h5>
+                            <p id="bio">
+                                Les empreintes digitales, les scans rétiniens, les visages scannés pour la reconnaissance faciale sont des exemples de données biométriques générées par les systèmes de sécurité et d'identification.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="../img/terrifiant.jpg" class="img-fluid rounded justify-content-end" style="height: 60%;float: right">
+                </div>
+            </div>
+        </div>
+        <center>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">En somme :</h5>
+                            <p id="somme">
+                                Chaque interaction que nous avons dans notre vie quotidienne, que ce soit en ligne ou hors ligne, peut potentiellement générer des données personnelles, ce qui soulève des questions importantes sur la vie privée et la sécurité de ces informations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </center>
+    </body>
+</html>

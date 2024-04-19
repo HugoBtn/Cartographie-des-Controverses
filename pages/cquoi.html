@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="dark">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <link href="../css/bootstrap.css" rel="stylesheet">
+        <script src="../js/bootstrap.js"></script>
+
+        <title>Qu'est-ce qu'une donnée personnelle ?</title>
+    </head>
+    <style>
+        /* Custom Styles */
+        .hero-section {
+            position: relative;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../img/hugo/data_woman.png'); /* Specify the path to your background image */
+            background-size: cover;
+            background-position: center;
+            filter: blur(1px) brightness(0.6); /* Apply filters to the background image */
+            z-index: -1;
+        }
+
+        .hero-heading {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-subheading {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+        }
+
+    </style>
+    <body>
+        <!---- Barre de Navigation ----->
+        <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Accueil</a>
+                <div class="d-flex justify-content-end">
+                    <a class="btn btn-outline-light my-2 my-sm-0 mr-2" href="comment-sont-elles-gerees.html" style="margin-left: 1em;">Comment sont elles gérées</a>
+                    <a class="btn btn-outline-light my-2 my-sm-0 mr-2" href="cquoi.html" style="margin-left: 1em;">C'est quoi une donnée personnelle</a>
+                    <a class="btn btn-outline-light my-2 my-sm-0 mr-2" href="protection.html" style="margin-left: 1em;">Comment s'en protéger</a>
+                    <a class="btn btn-outline-light my-2 my-sm-0 mr-2" href="utilisation.html" style="margin-left: 1em;">Comment sont elles utilisées</a>
+                    <a class="btn btn-outline-light my-2 my-sm-0 mr-2" href="sources.html" style="margin-left: 1em;">Sources</a>
+                </div>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation" style="visibility: hidden">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="hero-heading">Données Personnelles</h1>
+                        <p class="hero-subheading">Dans un monde de plus en plus connecté où les données personnelles sont omniprésentes, comment concilier la nécessité de collecter et d'utiliser ces données pour le développement des services en ligne avec la protection de la vie privée et la sécurité des utilisateurs ?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---- Paragraphes ----->
+        <div class="container" style="padding: 2em;">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Définition d'une donnée personnelle :</h5>
+                            <p>
+                                La Commission nationale de l'informatique et des libertés (CNIL) définit une donnée personnelle comme toute information se rapportant à une personne physique identifiée ou identifiable. Une personne est considérée comme identifiable dès lors qu'elle peut être identifiée, directement ou indirectement, notamment par référence à un identifiant tel qu'un nom, un numéro d'identification, des données de localisation, un identifiant en ligne, ou à un ou plusieurs éléments spécifiques propres à son identité physique, physiologique, génétique, psychique, économique, culturelle ou sociale. Ainsi, toute donnée permettant d'identifier une personne, même de manière indirecte, est considérée comme une donnée personnelle et doit être traitée avec précaution conformément aux lois et réglementations en vigueur en matière de protection des données.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="../img/CNIL_logo_2016.svg" class="img-fluid rounded" alt="Image" style="height: 98%;">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

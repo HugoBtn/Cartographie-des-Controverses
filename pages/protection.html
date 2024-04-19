@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="dark">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <link href="../css/bootstrap.css" rel="stylesheet">
+        <script src="../js/bootstrap.js"></script>
+
+        <title>Comment se protéger?</title>
+    </head>
+    <style>
+        /* Custom Styles */
+        .hero-section {
+            position: relative;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../img/hugo/data_woman.png'); /* Specify the path to your background image */
+            background-size: cover;
+            background-position: center;
+            filter: blur(1px) brightness(0.6); /* Apply filters to the background image */
+            z-index: -1;
+        }
+
+        .hero-heading {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-subheading {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            padding: 2em;
+        }
+
+    </style>
+    <body>
+        <!---- Barre de Navigation ----->
+        <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Accueil</a>
+                <div class="d-flex justify-content-end">
+                    <a class="btn btn-outline-light my-2 my-sm-0 mr-2" href="comment-sont-elles-gerees.html" style="margin-left: 1em;">Comment sont elles gérées</a>
+                    <a class="btn btn-outline-light my-2 my-sm-0 mr-2" href="cquoi.html" style="margin-left: 1em;">C'est quoi une donnée personnelle</a>
+                    <a class="btn btn-outline-light my-2 my-sm-0 mr-2" href="protection.html" style="margin-left: 1em;">Comment s'en protéger</a>
+                    <a class="btn btn-outline-light my-2 my-sm-0 mr-2" href="utilisation.html" style="margin-left: 1em;">Comment sont elles utilisées</a>
+                    <a class="btn btn-outline-light my-2 my-sm-0 mr-2" href="sources.html" style="margin-left: 1em;">Sources</a>
+                </div>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="navbarsExample01" style="">
+                    <ul class="navbar-nav me-auto mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Texte01">Mots de passes</a>
+                            <a class="nav-link active" aria-current="page" href="#Texte02">2FA</a>
+                            <a class="nav-link active" aria-current="page" href="#Texte03">Mises à jour</a>
+                            <a class="nav-link active" aria-current="page" href="#Texte04">Connexions sécurisées</a>
+                            <a class="nav-link active" aria-current="page" href="#Texte05">Protection contre les virus</a>
+                            <a class="nav-link active" aria-current="page" href="#Texte06">Limitations</a>
+                            <a class="nav-link active" aria-current="page" href="#Texte07">Navigation privée</a>
+                            <a class="nav-link active" aria-current="page" href="#Texte08">Éducation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="hero-heading">Données Personnelles</h1>
+                        <p class="hero-subheading">Dans un monde de plus en plus connecté où les données personnelles sont omniprésentes, comment concilier la nécessité de collecter et d'utiliser ces données pour le développement des services en ligne avec la protection de la vie privée et la sécurité des utilisateurs ?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---- Paragraphes ----->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="h5 font-weight-bold" id="Texte01">Prenez conscience de l'importance de la protection des données personnelles et des risques liés à leur divulgation.</h5>
+                            <p>
+                                Utilisez des mots de passe uniques et complexes pour chaque compte en ligne.<br>
+                                Utilisez des gestionnaires de mots de passe pour stocker en toute sécurité vos mots de passe et les générer automatiquement.
+                            </p>
+                            <img class="img-thumbnail" src="../img/gestion_mdp.webp" width="80%" alt="Gestion des mots de passe">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="h5 font-weight-bold" id="Texte02">Activation de l'authentification à deux facteurs (2FA)</h5>
+                            <p>
+                                Activez l'authentification à deux facteurs chaque fois que cela est possible pour ajouter une couche de sécurité supplémentaire à vos comptes.
+                            </p>
+                            <img class="img-thumbnail" src="../img/images.jpg" width="80%" alt="Activation de l'authentification à deux facteurs">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="h5 font-weight-bold" id="Texte03">Mises à jour régulières du logiciel et des appareils</h5>
+                            <p>
+                                Assurez-vous que vos appareils et logiciels sont toujours à jour avec les dernières mises à jour de sécurité pour bénéficier des correctifs de sécurité.
+                            </p>
+                            <img class="img-thumbnail" src="../img/ipdate.png" width="80%" alt="Mises à jour régulières du logiciel et des appareils">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="h5 font-weight-bold" id="Texte04">Utilisation de connexions sécurisées</h5>
+                            <p>
+                                Évitez d'utiliser des réseaux Wi-Fi publics non sécurisés pour les activités sensibles telles que les opérations bancaires en ligne ou les achats.
+                            </p>
+                            <img class="img-thumbnail" src="../img/https.jpg" width="80%" alt="Utilisation de connexions sécurisées">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="h5 font-weight-bold" id="Texte05">Protection contre les logiciels malveillants</h5>
+                            <p>
+                                Installez et mettez à jour régulièrement un logiciel antivirus ou anti-malware sur vos appareils pour vous protéger contre les logiciels malveillants.
+                            </p>
+                            <img class="img-thumbnail" src="../img/antivirus.webp" width="80%" alt="Protection contre les logiciels malveillants">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="h5 font-weight-bold" id="Texte06">Limitation des informations personnelles partagées en ligne</h5>
+                            <p>
+                                Soyez prudent avec les informations personnelles que vous partagez en ligne et limitez-les au strict nécessaire.
+                            </p>
+                            <img class="img-thumbnail" src="../img/cooki.jpg" width="80%" alt="Limitation des informations personnelles partagées en ligne">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="h5 font-weight-bold" id="Texte07">Utilisation de la navigation privée</h5>
+                            <p>
+                                Utilisez le mode de navigation privée ou incognito dans votre navigateur pour limiter la collecte de données par les sites web que vous visitez.
+                            </p>
+                            <img class="img-thumbnail" src="../img/navigation-privee.jpg" width="80%" alt="Utilisation de la navigation privée">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="h5 font-weight-bold" id="Texte08">Éducation continue sur la sécurité des données</h5>
+                            <p>
+                                Restez informé des dernières menaces et des meilleures pratiques en matière de sécurité des données en suivant les actualités sur la sécurité informatique et en participant à des formations ou des ateliers sur la sécurité des données.
+                            </p>
+                            <img class="img-thumbnail" src="../img/conf.jpg" width="80%" alt="Éducation continue sur la sécurité des données">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
